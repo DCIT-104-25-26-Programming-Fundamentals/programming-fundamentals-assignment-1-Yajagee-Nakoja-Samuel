@@ -45,9 +45,9 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
  =============================================================================
 def get_grade(score):
-  """Determines the letter grade based on numerical score. Returns none if the score is outside the range  0-100>"""
+    """Determines the letter grade based on numerical score. Returns none if the score is outside the range  0-100>"""
     if score <0 or score >100:
-        return none
+        return None
     elif score >= 80:
         return "A"
     elif score >= 70:
@@ -61,8 +61,8 @@ def get_grade(score):
 
 if __name__== "__main__":
     score= int(input("enter a student score (0-100):"))
-    grade=_get grade(score)
-    if grade is none:
+    grade=get_grade(score)
+    if grade is None:
         print("error: score must be betweeen 0 and 100.")
     else:
         print(f"grade: {grade}")
