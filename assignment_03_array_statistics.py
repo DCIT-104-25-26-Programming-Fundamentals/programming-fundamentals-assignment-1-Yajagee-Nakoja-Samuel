@@ -37,5 +37,21 @@
 
 # =============================================================================
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
-# =============================================================================
+=============================================================================
+def calculate_sum(numbers):
+    """calculate the sum of all numbers in the list using the loop."""
+    total=0
+    for num in numbers:
+        total +=num
+    return total
+def calculate_average(numbers):
+    """calculate the average of numbers in the list."""
+    total=calculate_sum(numbers)
+    return total/len(numbers)
+def find_maximum(numbers):
+    """find the maximum value in the list using a loop."""
+    max_val[0]
+    
+    
+
 
