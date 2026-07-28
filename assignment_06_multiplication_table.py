@@ -75,7 +75,7 @@ try:
         print("Please enter a positive number.")
 
 except ValueError:
-    print(Please enter a valid integer.)
+    print("Please enter a valid integer.")
 
 #
 # =============================================================================
