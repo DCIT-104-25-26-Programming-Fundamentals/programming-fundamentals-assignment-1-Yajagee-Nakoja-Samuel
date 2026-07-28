@@ -37,7 +37,7 @@
 
 # =============================================================================
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
-=============================================================================
+# =============================================================================
 def calculate_sum(numbers):
     """calculate the sum of all numbers in the list using the loop."""
     total=0
