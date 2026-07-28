@@ -49,19 +49,24 @@
 # - Each part must be in its own function (see scaffold below).
 # - Complete Part A before attempting Part B.
 #def table(number):
+    
+
+
+
+#
+# =============================================================================
+# YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
+# =============================================================================
+def table(number):
     print("\nTable for", number)
 
     for i in range(1, 13):
         answer = number * i
-        print(f"{number} x {i}  {answer}")
-
-
+        print(f"{number} x {i} = {answer}")
 def tables(limit):
-    for i in range(1, limit + 1)
+    for i in range(1, limit + 1):
         table(i)
         print()
-
-
 try:
     n = int(input("Enter a positive integer: "))
 
@@ -73,12 +78,5 @@ try:
         tables(n)
     else:
         print("Please enter a positive number.")
-
 except ValueError:
     print("Please enter a valid integer.")
-
-#
-# =============================================================================
-# YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
-# =============================================================================
-
