@@ -108,11 +108,12 @@ if __name__ == "__main__":
         "5": ("%", modulus),
         "6": ("**", exponent),
     }
- while True:
-        display_menu()
-        choice = input("Select an operation (1-7) ")
 
-  if choice == "7":
+    while True:
+        display_menu()
+        choice = input("Select an operation (1-7): ")
+
+        if choice == "7":
             print("Goodbye!")
             break
         elif choice in operations:
@@ -120,7 +121,7 @@ if __name__ == "__main__":
             num1 = float(input("Enter first number : "))
             num2 = float(input("Enter second number: "))
             try:
-                result = operation(num1, num2
+                result = operation(num1, num2)
                 if choice == "4":
                     result = round(result, 2)
                 print(f"Result: {format_num(num1)} {symbol} {format_num(num2)} = {format_num(result)}")
@@ -129,4 +130,5 @@ if __name__ == "__main__":
         else:
             print("Error: Invalid choice. Please select a number from 1 to 7.")
         print()
+
 
