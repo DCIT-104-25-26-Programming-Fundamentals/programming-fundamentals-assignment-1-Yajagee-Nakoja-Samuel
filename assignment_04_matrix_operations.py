@@ -84,7 +84,7 @@ def add_matrices(matrix_a, matrix_b):
     columns_a= len_a[0])
     columns_b= len(matrix_b[0])
     results=[]
-    for i in range(column_a):
+    for i in range(columns_a):
         row=[]
         for j in range(column_b):
             dot_product=0
