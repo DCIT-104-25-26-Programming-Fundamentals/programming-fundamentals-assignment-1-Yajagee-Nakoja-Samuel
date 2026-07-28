@@ -82,19 +82,19 @@ def modulus(a, b):
     return a % b
 def exponent(a, b):
     return a ** b
-def format_num(val):
+    def format_num(val):
     """Format a number without a trailing .0 when it's a whole number."""
     if float(val).is_integer():
         return str(int(val))
     return str(round(val, 2))
-def display_menu():
+    def display_menu():
     """Display the calculator menu."""
     print("============================")
     print("     SIMPLE CALCULATOR")
     print("============================")
-        print("1. Addition")
+    print("1. Addition")
     print("2. Subtraction")
-       print("3. Multiplication")
+    print("3. Multiplication")
     print("4. Division")
     print("5. Modulus")
     print("6. Exponentiation")
