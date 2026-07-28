@@ -82,12 +82,12 @@ def modulus(a, b):
     return a % b
 def exponent(a, b):
     return a ** b
-    def format_num(val):
+def format_num(val):
     """Format a number without a trailing .0 when it's a whole number."""
     if float(val).is_integer():
         return str(int(val))
     return str(round(val, 2))
-    def display_menu():
+def display_menu():
     """Display the calculator menu."""
     print("============================")
     print("     SIMPLE CALCULATOR")
@@ -110,7 +110,7 @@ if __name__ == "__main__":
     }
  while True:
         display_menu()
-        choice = input("Select an operation (1-7): ")
+        choice = input("Select an operation (1-7) ")
 
   if choice == "7":
             print("Goodbye!")
@@ -120,7 +120,7 @@ if __name__ == "__main__":
             num1 = float(input("Enter first number : "))
             num2 = float(input("Enter second number: "))
             try:
-                result = operation(num1, num2)
+                result = operation(num1, num2
                 if choice == "4":
                     result = round(result, 2)
                 print(f"Result: {format_num(num1)} {symbol} {format_num(num2)} = {format_num(result)}")
