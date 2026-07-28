@@ -79,14 +79,14 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 def display_menu():
-    """Display the to-do list menu.""
+    """Display the to-do list menu."""
     print("============================")
     print("     TO-DO LIST MENU")
-    print("=====================")
+    print("============================")
     print("1. Add task")
-    print("2. Viewtasks")
+    print("2. View tasks")
     print("3. Delete task")
-    print("4. Quit"
+    print("4. Quit")
 def add_task(tasks):
     """Prompt the user for a task description and add it to the list."""
     task = input("Enter task: ")
@@ -98,10 +98,10 @@ def view_tasks(tasks):
         print("Your to-do list is empty.")
         return
     print("Your Tasks:")
-    for i, task in enumer(tasks, start=1):
+    for i, task in enumerate(tasks, start=1):
         print(f"{i}. {task}")
 def delete_task(tasks):
-    """Show the task list, then remove a task by its displayed number.
+    """Show the task list, then remove a task by its displayed number."""
     view_tasks(tasks)
     if not tasks:
         return
@@ -115,11 +115,11 @@ if __name__ == "__main__":
     tasks = []
     while True:
         display_menu()
-        choice = input("Enter your choice  ")
+        choice = input("Enter your choice (1-4): ")
         if choice == "1":
             add_task(tasks)
         elif choice == "2":
-            view_taskstasks)
+            view_tasks(tasks)
         elif choice == "3":
             delete_task(tasks)
         elif choice == "4":
