@@ -96,7 +96,7 @@ def add_student(students):
     num_scores = int(input("How many scores? "))
     scores = []
     for i in range(1, num_scores + 1):
-        score = float(input(f"Enter score {i}: "))
+        score = float(input(f"Enter score {i}: ")
         scores.append(score)
     students.append({"name": name, "id": student_id, "scores": scores})
     print(f'Student "{name}" added successfully.')
