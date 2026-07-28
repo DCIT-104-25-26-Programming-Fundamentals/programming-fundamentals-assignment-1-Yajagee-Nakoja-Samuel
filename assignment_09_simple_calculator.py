@@ -67,4 +67,66 @@
 # =============================================================================
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
+def add(a, b):
+    return a + b
+def subtract(a, b):
+    return a - b
+def multiply(a, b):
+    return a * b
+def divide(a, b):
+    """Divide a by b, raising an error if b is zero."""
+    if b == 0:
+        raise ZeroDivisionError("Cannot divide by zero.")
+    return a / b
+def modulus(a, b):
+    return a % b
+def exponent(a, b):
+    return a ** b
+def format_num(val):
+    """Format a number without a trailing .0 when it's a whole number."""
+    if float(val).is_integer():
+        return str(int(val))
+    return str(round(val, 2))
+def display_menu():
+    """Display the calculator menu."""
+    print("============================")
+    print("     SIMPLE CALCULATOR")
+    print("============================")
+        print("1. Addition")
+    print("2. Subtraction")
+       print("3. Multiplication")
+    print("4. Division")
+    print("5. Modulus")
+    print("6. Exponentiation")
+    print("7. Quit")
+if __name__ == "__main__":
+    operations = {
+        "1": ("+", add),
+        "2": ("-", subtract),
+        "3": ("*", multiply),
+        "4": ("/", divide),
+        "5": ("%", modulus),
+        "6": ("**", exponent),
+    }
+ while True:
+        display_menu()
+        choice = input("Select an operation (1-7): ")
+
+  if choice == "7":
+            print("Goodbye!")
+            break
+        elif choice in operations:
+            symbol, operation = operations[choice]
+            num1 = float(input("Enter first number : "))
+            num2 = float(input("Enter second number: "))
+            try:
+                result = operation(num1, num2)
+                if choice == "4":
+                    result = round(result, 2)
+                print(f"Result: {format_num(num1)} {symbol} {format_num(num2)} = {format_num(result)}")
+            except ZeroDivisionError as e:
+                print(f"Error: {e}")
+        else:
+            print("Error: Invalid choice. Please select a number from 1 to 7.")
+        print()
 
