@@ -63,7 +63,7 @@ def transpose_matrix(matrix):
     rows= len(matrix)
     columns= len(matrix[0])
     transposed = []
-    for c in range(columns)
+    for c in range(columns):
         new_row=[]
         for r in range(rows):
             new-row.append(matrix[r][c])
@@ -81,7 +81,7 @@ def add_matrices(matrix_a, matrix_b):
     return results
  def multiply_matrices(matrix_a, matrix_b):
     rows_a= len(matrix_a)
-    columns_a= len_a[0])
+    columns_a= len(matirix_a[0])
     columns_b= len(matrix_b[0])
     results=[]
     for i in range(columns_a):
