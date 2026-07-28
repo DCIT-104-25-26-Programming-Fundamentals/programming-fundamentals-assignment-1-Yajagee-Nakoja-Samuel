@@ -58,5 +58,29 @@
 #
 # =============================================================================
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
-# =============================================================================
+=============================================================================
+def transpose_matrix(matrix):
+    rows= len(matrix)
+    columns= len(matrix[0])
+    transposed = []
+    for c in range(columns)
+        new_row=[]
+        for r in range(rows):
+            new-row.append(matrix[r][c])
+        transposed.append(new_row)
+    return transposed
+def add_matrices(matrix_a, matrix_b):
+    rows= len(matrix_a)
+    columns= len(matrix_a[0])
+    results=[]
+    for r in range(rows):
+        for c in range(columns):
+            sum_val= matrix_a[r][c]
+            new_row.append(sum_val)
+    results.append(new_row)
+    return results
+def multiply_matrices(matrix_a, matrix_b):
+    
+
+  
 
