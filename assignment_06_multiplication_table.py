@@ -66,7 +66,7 @@ try:
     n = int(input("Enter a positive integer: "))
 
     if n > 0:
-        print("nPART A")
+        print("\nPART A")
         table(n)
 
         print("\nPART B")
