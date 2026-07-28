@@ -68,7 +68,7 @@ def is_fibonacci(number):
     return False
 if __name__ == "__main__":
     print("--- Part A: First N Terms ---")
-    n = int(input("How many terms? ")
+    n = int(input("How many terms? "))
     if n <= 0:
         print("Error: N must be a positive integer.")
     else:
