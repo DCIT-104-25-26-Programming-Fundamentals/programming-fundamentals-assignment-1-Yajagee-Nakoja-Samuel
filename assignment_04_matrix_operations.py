@@ -79,7 +79,7 @@ def add_matrices(matrix_a, matrix_b):
             new_row.append(sum_val)
     results.append(new_row)
     return results
- def multiply_matrices(matrix_a, matrix_b):
+def multiply_matrices(matrix_a, matrix_b):
     rows_a= len(matrix_a)
     columns_a= len(matirix_a[0])
     columns_b= len(matrix_b[0])
