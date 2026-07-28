@@ -48,7 +48,34 @@
 #   print an error message and stop.
 # - Each part must be in its own function (see scaffold below).
 # - Complete Part A before attempting Part B.
-#
+#def table(number):
+    print("\nTable for", number)
+
+    for i in range(1, 13):
+        answer = number * i
+        print(f"{number} x {i}  {answer}")
+
+
+def tables(limit):
+    for i in range(1, limit + 1)
+        table(i)
+        print()
+
+
+try:
+    n = int(input("Enter a positive integer: "))
+
+    if n > 0:
+        print("nPART A")
+        table(n)
+
+        print("\nPART B")
+        tables(n)
+    else:
+        print("Please enter a positive number.")
+
+except ValueError:
+    print(Please enter a valid integer.)
 
 #
 # =============================================================================
