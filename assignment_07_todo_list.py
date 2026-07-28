@@ -119,7 +119,7 @@ if __name__ == "__main__":
         if choice == "1":
             add_task(tasks)
         elif choice == "2":
-            view_tasks(tasks)
+            view_taskstasks)
         elif choice == "3":
             delete_task(tasks)
         elif choice == "4":
