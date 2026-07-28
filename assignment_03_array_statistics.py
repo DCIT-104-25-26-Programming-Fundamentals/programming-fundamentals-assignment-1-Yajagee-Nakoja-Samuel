@@ -50,7 +50,33 @@ def calculate_average(numbers):
     return total/len(numbers)
 def find_maximum(numbers):
     """find the maximum value in the list using a loop."""
-    max_val[0]
+    max_val= numbers [0]
+    for num in numbers [1:]:
+        if num> max_val:
+            max_value= num
+    returm max_val
+
+def find_minimum(numbers):
+    """find the minimum value in the list using a loop."""
+    min_val= numbers [0]
+    for num in numbers [1:]:
+        if num< min_val:
+            min_value num
+    return min_val
+if __name__ == "__main__"
+    count int(input(" how many are numbers?"))
+    if count<=0:
+        print("error: please enter a positive integer.")
+    else:
+        numbers[]
+    for i in range(1, count +1):
+        val= float(input(f" enter number {i}:"))
+        numbers.append(val)
+        print("\n Results:")
+        print(f"sum: {int(total) if total.is_integer() else total}") 
+        print(f"average: {avg}")
+        print(f"maximum: {int(max_num) if max_num.is_integer() else max_num}")
+        print(f"minimum: {int(min_num) if min_num,is_integer() else min_num}")
     
     
 
