@@ -81,18 +81,18 @@ def add_matrices(matrix_a, matrix_b):
     return results
 def multiply_matrices(matrix_a, matrix_b):
     rows_a= len(matrix_a)
-    columns_a= len(matirix_a[0])
+    columns_a= len(matrix_a[0])
     columns_b= len(matrix_b[0])
     results=[]
-    for i in range(columns_a):
+    for i in range(rows_a):
         row=[]
-        for j in range(column_b):
+        for j in range(columns_b):
             dot_product=0
             for k in range(columns_a):
-                dot_product+=mztrix_a[i][k]*matrix_b[k][j]
+                dot_product+=matrix_a[i][k]*matrix_b[k][j]
             row.append(dot_product)
         results.append(row)
-     return results
+    return results
             
     
 
