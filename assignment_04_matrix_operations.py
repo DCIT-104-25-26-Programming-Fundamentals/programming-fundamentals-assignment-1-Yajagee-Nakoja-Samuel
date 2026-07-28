@@ -79,7 +79,21 @@ def add_matrices(matrix_a, matrix_b):
             new_row.append(sum_val)
     results.append(new_row)
     return results
-def multiply_matrices(matrix_a, matrix_b):
+ def multiply_matrices(matrix_a, matrix_b):
+    rows_a= len(matrix_a)
+    columns_a= len_a[0])
+    columns_b= len(matrix_b[0])
+    results=[]
+    for i in range(column_a):
+        row=[]
+        for j in range(column_b):
+            dot_product=0
+            for k in range(columns_a):
+                dot_product+=mztrix_a[i][k]*matrix_b[k][j]
+            row.append(dot_product)
+         results.append(row)
+     return results
+            
     
 
   
